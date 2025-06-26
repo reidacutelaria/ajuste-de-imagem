@@ -1,0 +1,62 @@
+:root {
+    --bg-color: #2D2D2D;
+    --text-color: #CCCCCC;
+    --label-color: #999999;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    padding: 18px;
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.row {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+sp-heading {
+    margin-bottom: 10px;
+}
+
+label {
+    color: var(--label-color);
+    font-size: 12px;
+}
+
+sp-picker {
+    width: 100%;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+    gap: 10px;
+}
+
+sp-button {
+    flex-grow: 1;
+}
+
+li:before {
+    content: '• ';
+    width: 3em;
+}
+
+#layers {
+    border: 1px solid #808080;
+    border-radius: 4px;
+    padding: 16px;
+}

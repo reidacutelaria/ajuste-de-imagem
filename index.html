@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <sp-body>
+        <div class="container">
+            <sp-heading>Ajuste de Imagem</sp-heading>
+            
+            <div class="row">
+                <label for="lamina-select">Lâmina (Metal):</label>
+                <sp-picker id="lamina-select" size="m" quiet>
+                    <sp-menu-item>Carregando...</sp-menu-item>
+                </sp-picker>
+            </div>
+
+            <div class="row">
+                <label for="cabo-select">Cabo:</label>
+                <sp-picker id="cabo-select" size="m" quiet>
+                    <sp-menu-item>Carregando...</sp-menu-item>
+                </sp-picker>
+            </div>
+            
+            <footer>
+                <sp-button id="btnAplicarAjustes" variant="cta">Aplicar Ajustes</sp-button>
+                <sp-button id="btnAtualizar" variant="primary">Atualizar</sp-button>
+            </footer>
+        </div>
+    </sp-body>
+    
+    <script src="main.js"></script>
+</body>
+</html>
